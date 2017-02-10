@@ -7,20 +7,24 @@
 }
 
 body {
-  background-color: #f1d5e1;
+  background-color: #f9e6d8;
+}
+
+header{
+  background-color: #fe2d29
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:'Kreon', serif;
   font-size: 35px;
-  color: #b0145b;
+  color: #fff;
   font-weight: bold;
   text-align: center;
 }
 
 p{
-  color: #006666;
-  font-family: Helvetica, Arial, Sans-serif;
+  color: #2b506d;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -41,17 +45,23 @@ p{
 #nav a:link, #nav a:visited {
   display: block;
   color: #fff;
-  background-color: #d3739c;
+  background-color: #4b83a4;
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:'Nunito Sans', sans-serif;
   text-align: center;
   padding: 4px;
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #b0145b;
+  background-color: #36587d;
 }
 
 img {
   border: none;
 }
+
+#footer {
+    color: #2b506d;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.8em;
+    border-top: 1px solid #2b506d;
