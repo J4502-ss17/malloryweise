@@ -109,9 +109,71 @@ header, article, aside, footer {
   padding: 10px;
 }
 
+/*These styles activate when the page is larger than 600px wide*/
+
+@media all and (min-width:600px) {
+
+  .navigation {
+      flex-flow: row wrap;
+      justify-content: flex-end;
+  }
+
+  .navigation a {
+      border: none;
+  }
+
+  .navigation a:hover {
+    background: #fe2d29;
+  }
+
+
+  aside {
+      flex: 1 auto;
+  }
+
+  article {
+  flex: 2 0px;
+}
+
+  article {
+      order: 1;
+  }
+
+  .aside-2 {
+      order: 2;
+  }
+
+  .aside-3 {
+    order: 3;
+  }
+
+  footer {
+      order: 3;
+  }
+
+  .image {
+      width: 45%;
+      margin-right: 10px;
+  }
+
+  .info {
+      width: 45%;
+  }
+
+  .first {
+      margin-top: 0;
+  }
+
+  article {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+  }
+}
+
 /*These styles activate when the page is larger than 800px wide*/
 
-@media (min-width:800px) {
+@media all and (min-width:800px) {
 
     .navigation {
         flex-flow: row wrap;
@@ -140,6 +202,10 @@ header, article, aside, footer {
 
     .aside-2 {
         order: 2;
+    }
+
+    .aside-3 {
+      order: 3;
     }
 
     footer {
