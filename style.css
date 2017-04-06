@@ -109,6 +109,19 @@ header, article, aside, footer {
   padding: 10px;
 }
 
+/*footer style*/
+
+#footer {
+    color: #2b506d;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.8em;
+    border-top: 1px solid #2b506d;
+  }
+
+  .aside-3{
+    display: none;
+  }
+
 /*These styles activate when the page is larger than 600px wide*/
 
 @media all and (min-width:600px) {
@@ -175,7 +188,11 @@ header, article, aside, footer {
 
 @media all and (min-width:800px) {
 
-    .navigation {
+  .aside-3{
+    display: block;
+  }
+
+    /*.navigation {
         flex-flow: row wrap;
         justify-content: flex-end;
     }
@@ -229,14 +246,5 @@ header, article, aside, footer {
         display: flex;
         flex-flow: row;
         flex-wrap: wrap;
-    }
-  }
-
-/*footer style*/
-
-#footer {
-    color: #2b506d;
-    font-family: 'Crimson Text', serif;
-    font-size: 0.8em;
-    border-top: 1px solid #2b506d;
+    }*/
   }
