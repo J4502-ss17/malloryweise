@@ -109,6 +109,10 @@ header, article, aside, footer {
   padding: 10px;
 }
 
+.aside-3{
+  display: none;
+}
+
 /*footer style*/
 
 #footer {
@@ -116,10 +120,6 @@ header, article, aside, footer {
     font-family: 'Crimson Text', serif;
     font-size: 0.8em;
     border-top: 1px solid #2b506d;
-  }
-
-  .aside-3{
-    display: none;
   }
 
 /*These styles activate when the page is larger than 600px wide*/
@@ -139,13 +139,12 @@ header, article, aside, footer {
     background: #fe2d29;
   }
 
-
   aside {
       flex: 1 auto;
   }
 
   article {
-  flex: 2 0px;
+  flex: 4 0px;
 }
 
   article {
@@ -156,9 +155,9 @@ header, article, aside, footer {
       order: 2;
   }
 
-  .aside-3 {
+  .aside-3{
     order: 3;
-  }
+}
 
   footer {
       order: 3;
@@ -178,6 +177,12 @@ header, article, aside, footer {
   }
 
   article {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+  .subwrapper {
       display: flex;
       flex-flow: row;
       flex-wrap: wrap;
@@ -189,62 +194,11 @@ header, article, aside, footer {
 @media all and (min-width:800px) {
 
   .aside-3{
+    order: 3;
+}
+
+  .aside-3{
     display: block;
   }
 
-    /*.navigation {
-        flex-flow: row wrap;
-        justify-content: flex-end;
-    }
-
-    .navigation a {
-        border: none;
-    }
-
-    .navigation a:hover {
-    	background: #fe2d29;
-    }
-
-    aside {
-        flex: 1 auto;
-    }
-
-    article {
-		flex: 2 0px;
-	}
-
-    article {
-        order: 1;
-    }
-
-    .aside-2 {
-        order: 2;
-    }
-
-    .aside-3 {
-      order: 3;
-    }
-
-    footer {
-        order: 3;
-    }
-
-    .image {
-        width: 45%;
-        margin-right: 10px;
-    }
-
-    .info {
-        width: 45%;
-    }
-
-    .first {
-        margin-top: 0;
-    }
-
-    article {
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-    }*/
   }
