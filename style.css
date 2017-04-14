@@ -118,6 +118,8 @@ header, article, aside, footer {
       order: 1;
       font-size: 1.75em;
       width: 2em;
+      text-decoration: none;
+      color: #4b83a4;
   }
 
 
@@ -128,6 +130,10 @@ header, article, aside, footer {
     font-family: 'Crimson Text', serif;
     font-size: 0.8em;
     border-top: 1px solid #2b506d;
+  }
+
+  .navigation {
+    display: none;
   }
 
 /*These styles activate when the page is larger than 600px wide*/
@@ -196,12 +202,15 @@ header, article, aside, footer {
       flex-wrap: wrap;
   }
 
-
 }
 
 /*These styles activate when the page is larger than 800px wide*/
 
 @media all and (min-width:800px) {
+
+.navigation {
+  display: flex;
+}
 
   .aside-3{
     order: 3;
