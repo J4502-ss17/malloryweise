@@ -114,12 +114,12 @@ header, article, aside, footer {
   display: none;
 }
 
-
   .menu-trigger {
       order: 1;
       font-size: 1.75em;
       width: 2em;
   }
+
 
 /*footer style*/
 
@@ -214,5 +214,6 @@ header, article, aside, footer {
   .menu-trigger {
       display: none;
   }
+
 
   }
