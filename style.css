@@ -3,8 +3,8 @@
 #container {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
   background-color: #f9e6d8;
+  text-align: center;
 }
 
 /*text and font styles*/
@@ -134,6 +134,21 @@ header, article, aside, footer {
 
   .navigation {
     display: none;
+  }
+
+  .map-wrapper {
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+  }
+
+  .map-wrapper iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
   }
 
 /*These styles activate when the page is larger than 600px wide*/
